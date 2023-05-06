@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Logo Design Request Form</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="bg"></div>
+      <div id="content">
+    <h1 id="title">LOGO DESIGN REQUEST FORM</h1>
+    <p id="description">This application form will help us to design a logo that fits your needs,preferences, and your brand goals.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>PERSONAL INFORMATON</legend>
+        <label id="name-label" for="name">Name <input id="name" name="name" type="textarea" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email <input id="email" name="name" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age <input id="number" name="name" type="number" placeholder="Enter your age" min="18" max="120"></label>
+        <label id="phone-label" for="phone">Phone Number <input id="phone" name="phone" type="text" placeholder="Enter your phone number" pattern="^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>BUSINESS INFORMATION</legend>
+        <label id="brand-name-label" for="brand-name">Brand Name 
+          <input type="textarea" id="brand-name" name="brand-name" placeholder="Your logo will embody the entered brand name. ">
+        </label>
+        <label id="industry-type-label" for="industry-type">
+          Industry Type <p>Please choose the field of your industry.</p>
+          <select id="dropdownlist" name="industry-type" class="round">
+            <option value="">-- Select Industry --</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="architecture">Architecture</option>
+            <option value="automotive">Automotive</option>
+            <option value="banking">Banking</option>
+            <option value="chemicals">Chemicals</option>
+            <option value="communications">Communications</option>
+            <option value="construction">Construction</option>
+            <option value="consulting">Consulting</option>
+            <option value="consumer goods">Consumer Goods</option>
+            <option value="education">Education</option>
+            <option value="energy">Energy</option>
+            <option value="engineering">Engineering</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="environment">Environment</option>
+            <option value="fashion">Fashion</option>
+            <option value="finance">Finance</option>
+            <option value="food &amp; beverage">Food &amp; Beverage</option>
+            <option value="government">Government</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="hospitality">Hospitality</option>
+            <option value="insurance">Insurance</option>
+            <option value="legal">Legal</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="media">Media</option>
+            <option value="mining">Mining</option>
+            <option value="non-profit">Non-Profit</option>
+            <option value="oil &amp; gas">Oil &amp; Gas</option>
+            <option value="pharmaceuticals">Pharmaceuticals</option>
+            <option value="real estate">Real Estate</option>
+            <option value="retail">Retail</option>
+            <option value="services">Services</option>
+            <option value="shipping">Shipping</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="telecommunications">Telecommunications</option>
+            <option value="textiles">Textiles</option>
+            <option value="tourism">Tourism</option>
+            <option value="transportation">Transportation</option>
+            <option value="utilities">Utilities</option>
+          </select>
+        </label>
+        <label id="overview-label" for="overview">Business Overview <textarea id="overview" name="overview" cols="50" rows="10" class="long-input" >Briefly describe what do you do in your business, what are the main products and services that you deliver, and what is unique about your business.</textarea> </label>
+        <label id="vision-label" for="vision">Vision <textarea id="vision" name="vision" cols="50" rows="10" class="long-input" >This will help us in accommodating the logo with your business vision.</textarea>
+        </label>
+        <label id="target-audience-label" for="target-audience">Target Audience 
+          <p>This will help us in designing a logo that might involve elements to attract the targeted audience. </p>
+        <div id="age-group" class="audience-type">
+        <h3 class="audience-group">Age Group</h3>
+        <div class="to-flex">
+        <div><input type="checkbox" name="target-audience" id="target-audience-1-1" value="kids"> <span>Kids</span></div>
+        <div><input type="checkbox" name="target-audience" id="target-audience-1-2" value="teenagers"> <span>Teenagers</span></div>
+        <div><input type="checkbox" name="target-audience" id="target-audience-1-3" value="adults"> <span>Adults</span></div>
+        <div><input type="checkbox" name="target-audience" id="target-audience-1-4" value="elders"> <span>Elders</span></div>
+        </div>
+        </div>
+        <div id="Gender" class="audience-type">
+        <h3 class="audience-group">Gender</h3>
+        <div class="to-flex">
+        <div><input type="checkbox" name="target-audience" id="target-audience-2-1" value="Male"> <span>Male</span></div>
+        <div><input type="checkbox" name="target-audience" id="target-audience-2-2" value="Female"> <span>Female</span></div>
+        </div>
+        </div>
+        <div id="customer-type" class="audience-type">
+        <h3 class="audience-group">Customer Type</h3>
+        <div class="to-flex">
+        <div><input type="checkbox" name="target-audience" id="target-audience-3-1" value="individuals"> <span>Individuals</span></div>
+        <div><input type="checkbox" name="target-audience" id="target-audience-3-2" value="business"> <span>Business</span></div>
+        </div>
+        </div>
+        </label>
+        <label id="current-logo-label" for="current-logo">Current Logo <p>If you have a current logo, please upload it.</p>
+        <div id="choose-file" ><input type="file" name="current-logo" id="current-logo" ></div>
+        </label>
+        <label id="why-logo-label" for="why-logo">
+          Why do you want to create a new logo? <textarea id="why-logo" name="why-logo" cols="50" rows="10" class="long-input" pattern="^(?:\S+\s){4}\S+">Please describe the reasons you want to create a new logo.</textarea>
+        </label>
+        <label id="slogan-label" for="slogan">
+          Logo Slogan <textarea id="slogan" name="slogan" cols="50" rows="10" class="long-input" pattern="^(?:\S+\s){4}\S+">A slogan or tagline is a brief, inspiring statement of the vision and mission of your company. It can be part of the logo.</textarea>
+          </label>
+      </fieldset>
+      <fieldset>
+        <legend>DESIGNING PREFERENCES</legend>
+        <label id="brand-adjectives-label" for="brand-adjectives">Brand's Adjectives 
+          <p>Please select <strong>only 4</strong> of the adjectives that you would like your logo to communicate.</p>
+        <div class="to-grid adjectives">
+        <input type="checkbox" id="brand-adjective-1" name="brand-adjectives" onclick="limitCheckboxes()" value="adaptable"><span>Adaptable</span>
+        <input type="checkbox" id="brand-adjective-2" name="brand-adjectives" onclick="limitCheckboxes()" value="adorable"><span>Adorable</span>
+        <input type="checkbox" id="brand-adjective-3" name="brand-adjectives" onclick="limitCheckboxes()" value="classic"><span>Classic</span>
+        <input type="checkbox" id="brand-adjective-4" name="brand-adjectives" onclick="limitCheckboxes()" value="minimalist"><span>Minimalist</span>
+        <input type="checkbox" id="brand-adjective-5" name="brand-adjectives" onclick="limitCheckboxes()" value="innovative"><span>Innovative</span>
+        <input type="checkbox" id="brand-adjective-6" name="brand-adjectives" onclick="limitCheckboxes()" value="creative"><span>Creative</span>
+        <input type="checkbox" id="brand-adjective-7" name="brand-adjectives" onclick="limitCheckboxes()" value="brave"><span>Brave</span>
+        <input type="checkbox" id="brand-adjective-8" name="brand-adjectives" onclick="limitCheckboxes()" value="calm"><span>Calm</span>
+        <input type="checkbox" id="brand-adjective-9" name="brand-adjectives" onclick="limitCheckboxes()" value="cultured"><span>Cultured</span>
+        <input type="checkbox" id="brand-adjective-10" name="brand-adjectives" onclick="limitCheckboxes()" value="modern"><span>Modern</span>
+        <input type="checkbox" id="brand-adjective-11" name="brand-adjectives" onclick="limitCheckboxes()" value="dashing"><span>Dashing</span>
+        <input type="checkbox" id="brand-adjective-12" name="brand-adjectives" onclick="limitCheckboxes()" value="delightful"><span>Delightful</span>
+        <input type="checkbox" id="brand-adjective-13" name="brand-adjectives" onclick="limitCheckboxes()" value="delicate"><span>Delicate</span>
+        <input type="checkbox" id="brand-adjective-14" name="brand-adjectives" onclick="limitCheckboxes()" value="dynamic"><span>Dynamic</span>
+        <input type="checkbox" id="brand-adjective-15" name="brand-adjectives" onclick="limitCheckboxes()" value="efficient"><span>Efficient</span>
+        <input type="checkbox" id="brand-adjective-16" name="brand-adjectives" onclick="limitCheckboxes()" value="enduring"><span>Enduring</span>
+        <input type="checkbox" id="brand-adjective-17" name="brand-adjectives" onclick="limitCheckboxes()" value="loyal"><span>Loyal</span>
+        <input type="checkbox" id="brand-adjective-18" name="brand-adjectives" onclick="limitCheckboxes()" value="familiar"><span>Familiar</span>
+        <input type="checkbox" id="brand-adjective-19" name="brand-adjectives" onclick="limitCheckboxes()" value="fancy"><span>Fancy</span>
+        <input type="checkbox" id="brand-adjective-20" name="brand-adjectives" onclick="limitCheckboxes()" value="gentle"><span>Gentle</span>
+        <input type="checkbox" id="brand-adjective-21" name="brand-adjectives" onclick="limitCheckboxes()" value="industrious"><span>Industrious</span>
+        <input type="checkbox" id="brand-adjective-22" name="brand-adjectives" onclick="limitCheckboxes()" value="knowledgeable"><span>Knowledgeable</span>
+        <input type="checkbox" id="brand-adjective-23" name="brand-adjectives" onclick="limitCheckboxes()" value="peaceful"><span>Peaceful</span>
+        <input type="checkbox" id="brand-adjective-24" name="brand-adjectives" onclick="limitCheckboxes()" value="original"><span>Original</span>
+        <input type="checkbox" id="brand-adjective-25" name="brand-adjectives" onclick="limitCheckboxes()" value="unique"><span>Unique</span>
+        <input type="checkbox" id="brand-adjective-26" name="brand-adjectives" onclick="limitCheckboxes()" value="enthusiastic"><span>enthusiastic</span>
+        <input type="checkbox" id="brand-adjective-27" name="brand-adjectives" onclick="limitCheckboxes()" value="Fearless"><span>Fearless</span>
+        </div>
+        </label>
+
+        <label id="logo-type-label" for="logo-type">
+          Logo Type 
+          <p>We would like to know what type of logo you prefer. The below image is your reference to know the logo types. Note: we might recommend aother type if necessary</p>
+          <select id="dropdown" name="logo-type" class="round">
+            <option value="0">Select one type</option>
+            <option value="1">Wordmark</option>
+            <option value="2">Letterforms</option>
+            <option value="3">Monogram</option>
+            <option value="4">Symbol</option>
+            <option value="5">Abstract</option>
+            <option value="6">Mascot</option>
+            <option value="7">Emblems</option>
+            <option value="8">Combo</option>
+            <option value="9">Dynamic</option>
+          </select>
+          <a id="help-me" href="#help-popup">Help me in choosing</a>
+        </label>
+
+        
+
+        <label id="main-color-label" for="main-color">
+          Preferred Main Color <p>If you have a preferred color, please provide us with its hexadecimal code (like #ffffff).</p><input type="text" id="main-color" name="main-color" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="notes-label" for="notes">
+          Additional Notes <textarea id="notes" name="notes" cols="50" rows="10" class="long-input" >If you would like to add some notes, feel free to add them in the box below.</textarea>
+        </label>
+        <label id="feedback-label" for="feedback"> How would you rate this form in terms of clarity?
+          <p>Please rate on a scale from 1 - 5, with 1 being strongly disappointed and 5 being strongly happy.</p>
+          <input type="radio" id="1-rate" name="rating" value="1"> 1
+        <input type="radio" id="2-rate" name="rating" value="2"> 2
+        <input type="radio" id="3-rate" name="rating" value="3"> 3
+        <input type="radio" id="4-rate" name="rating" value="4"> 4
+        <input type="radio" id="5-rate" name="rating" value="5"> 5
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+    <div id="help-popup" class="overlay">
+      <div class="popup">
+        <h2>Logo Type Guide</h2>
+        <a class="close" href="#">&times;</a>
+        <img src="https://webtrickz.com/wp-content/uploads/2022/04/logo-type.jpeg" alt="This is a reference for logo types" width="70%"/>
+        <div class="content">
+          For more info, <a href="https://www.wix.com/blog/creative/2020/01/types-of-logos/">click here</a>.
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>
