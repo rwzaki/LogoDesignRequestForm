@@ -4,4 +4,4 @@ This simple form was developed as part of the Responsive Web Design Course by Fr
 To view the form click [this link](http://logorequestform.epizy.com/).
 
 
-NOTE: The form is just a static page. It is just to showcase whatever projects I worked on. Hopefully it will be enhanced later on for **mobile screens**.
+NOTE: The form is still not responsive with mobile screens. Mainly, at the moment the form is justa static webpage to showcase whatever tasks I worked on. Hopefully it will be enhanced later on.
